@@ -1,0 +1,17 @@
+<p>welcome in contact</p>
+
+<nav>
+  <ul>
+    <li><a routerLink="sign">sign in</a></li>
+  </ul>
+</nav>
+<form #myform="ngForm" (ngSubmit)="onSubmit()">
+  <label>user name</label>
+  <input type="text" name="name" [(ngModel)]="test.name" />
+  <label>id</label>
+  <input type="text" name="id" [(ngModel)]="test.id" />
+  <label>job</label>
+  <input type="text" name="job" [(ngModel)]="test.job" />
+  <input type="submit" value="click me" class="btn btn-danger" />
+</form>
+<router-outlet></router-outlet>
